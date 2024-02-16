@@ -1,0 +1,30 @@
+.nav-container{
+    width: 100%;
+    background-image: linear-gradient(-45deg,grey,white);
+}
+.hrule{
+    border: solid 1px black;
+}
+.ulist-container{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.btn{
+    border: solid;
+    color: black;
+    background-color: white;
+    height: 30px;
+    width: 160px;
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Bree Serif';
+    margin-top: 5px;
+}

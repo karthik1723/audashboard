@@ -1,0 +1,31 @@
+/* Style for the home container */
+.home-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Styling for the logo */
+.logo1 {
+  max-width: 200px; /* Adjust based on your logo size */
+  margin-bottom: 20px;
+}
+
+/* Styling for headings */
+.home-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2em; /* Larger font size for main heading */
+}
+
+.home-container h3 {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.2em; /* Slightly larger font size for subheading */
+}
+
+/* Add additional styles as needed */

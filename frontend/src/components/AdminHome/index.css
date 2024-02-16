@@ -1,0 +1,54 @@
+/* General styling for the home container */
+.home-container {
+    width: 100vw;
+    height: 100%;
+    margin-top: 25%;
+    text-align: center;
+    background-image: linear-gradient(45deg,#647feb,#f15858);
+    box-shadow: 0 6px 12px rgba(0,0,0,2);
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: white;
+  }
+  
+  /* Styling for the logo */
+  .logo1 {
+    max-width: 150px; /* Adjust based on your logo size */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for headings */
+  .home-container h1 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .home-container h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .home-container button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-container button  {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  /* Add additional styles as needed */
+  .adminhome{
+    
+  background-image: linear-gradient(45deg,grey,white);
+    color: white;
+    padding-top: 50px;
+  }

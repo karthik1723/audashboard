@@ -1,0 +1,55 @@
+.dropdown-container {
+    text-align: center; /* Centers the dropdown */
+    margin-bottom: 20px;
+  }
+  
+  .year-dropdown {
+    margin-right: 10px;
+  }
+  
+  .admission-table {
+    width: 80%; /* Full-width table */
+    border-collapse: collapse; /* Collapses border */
+  }
+  
+  .admission-table, .admission-table th, .admission-table td {
+    border: 1px solid black; /* Adds border to table and cells */
+  }
+  
+  .admission-table th, .admission-table td {
+    padding: 10px; /* Adds padding for cells */
+    text-align: center; /* Centers text in cells */
+  }
+  
+  .admission-table th {
+    background-color: #f2f2f2; /* Adds background color to header */
+  }
+  .chart-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Updated shadow */
+    margin: 20px;
+    padding: 15px;
+  flex: 1;
+  width: 40%;
+  transition: box-shadow 0.3s ease-in-out;
+  /* position: relative; Needed for absolute positioning of the child */
+  padding-bottom: 30px;
+  }
+  .print-button {
+    border: solid;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Bree Serif';
+    cursor: pointer; /* To show it's clickable */
+    margin-top: 20px; /* Add some space above the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for colors */
+}
+
+.print-button:  {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth on   */
+}

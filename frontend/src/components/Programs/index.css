@@ -1,0 +1,22 @@
+.print-button {
+    border: solid;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Bree Serif';
+    cursor: pointer; /* To show it's clickable */
+    margin-top: 20px; /* Add some space above the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for colors */
+}
+
+.print-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth on   */
+}
+.chart-wrapper{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

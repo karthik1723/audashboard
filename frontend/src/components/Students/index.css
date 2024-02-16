@@ -1,0 +1,156 @@
+.std-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+.std-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.std-type{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.std-number{
+    display: flex;
+    flex-direction: row;
+}
+.std-img{
+    height: 60px;
+    width: 60px;
+}
+.std-type-txt{
+    font-size: 24px;
+    font-family: 'Bree Serif';
+}
+#totalStudents{
+    font-size: 20px;
+    font-family: 'Bree Serif';
+}
+#maleStudents{
+    font-size: 20px;
+    font-family: 'Bree Serif';
+}
+#femaleStudents{
+    font-size: 20px;
+    font-family: 'Bree Serif';
+}
+.drop-label{
+    font-size: 18px;
+    font-family: 'Bree Serif';
+}
+.std-drop-container{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.std-drop-menu{
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color:black;
+}
+.btn2{
+    border: solid;
+    color: black;
+    height: 20px;
+    width: 80px;
+    font-size: 16px;
+    border-width: 2px;
+    margin-top: -1px;
+    border-radius: 8px;
+    font-family: 'Bree Serif';
+}
+
+/* index.css */
+.table-container {
+    display: flex;
+    justify-content: center; /* Center table row-wise */
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: auto; /* Center table in its container */
+  }
+  
+  th, td {
+    border: 1px solid black; /* Add border to table cells */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .charts-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjusts space between cards */
+    flex-wrap: wrap; /* Allows cards to wrap to next line on smaller screens */
+  }
+  
+  .chart-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Updated shadow */
+    margin: 20px;
+    padding: 15px;
+  flex: 1;
+  width: 40%;
+  transition: box-shadow 0.3s ease-in-out;
+  /* position: relative; Needed for absolute positioning of the child */
+  padding-bottom: 30px;
+  }
+
+  .show-shadow {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .table-container table {
+    max-width: 90%; /* Adjust as needed */
+    margin: auto;
+    font-size: 0.9em; /* Smaller font size */
+  }
+  
+  .table-container th, .table-container td {
+    padding: 8px 10px; /* Adjust padding */
+  }
+
+  .chart-title {
+    right: 10px; /* Adjust as needed */
+    bottom: 5px; 
+    margin: 0;
+    color: #333; /* Adjust color as needed */
+    text-align:center;
+  }
+  .print-button {
+    border: solid;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-family: 'Bree Serif';
+    cursor: pointer; /* To show it's clickable */
+    margin-top: 20px; /* Add some space above the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for colors */
+}
+
+.print-button  {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth on   */
+}
+.module-home{
+  background-image: linear-gradient(45deg,grey,white);
+  min-height: 100vh;
+  max-height: 100%;
+  border-radius: 5px;
+}
+@media print {
+  .header-container,.nav-container, .print-button {
+    display: none;
+  }
+}

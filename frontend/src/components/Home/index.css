@@ -1,0 +1,43 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+    background-image: linear-gradient(45deg,#647feb,#f15858);
+    box-shadow: 0 6px 12px rgba(0,0,0,2);
+    border-radius: 12px;
+    color: white;
+    margin-top: 18%;
+}
+.logo1{
+    height: 50px;
+    width: 800px;
+}
+.buttonhome{
+    background-color: transparent;
+    border: solid 2px;
+    color: white;
+    margin-bottom: 2px;
+}
+.home-main{ /* Added to support absolute positioning of the pseudo-element */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-main::before{
+    content: ""; /* Required for a pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./aubgimg.png');
+    background-size: cover;
+    opacity: 0.75; /* Adjust this value to control visibility */
+    z-index: -1; /* Ensures the overlay does not interfere with content */
+}

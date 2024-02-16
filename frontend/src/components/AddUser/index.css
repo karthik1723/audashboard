@@ -1,0 +1,70 @@
+/* Ensure styles are scoped only to the form and its elements, not affecting the header */
+.app-container .user-form {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    align-items: center;
+    margin-left: 33%;
+    padding: 20px;
+  }
+  
+  .app-container .user-form h2 {
+    text-align: center; /* Center the heading */
+  }
+  
+  .app-container .form-field {
+    margin-bottom: 15px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .app-container .form-field label {
+    margin-right: 10px; /* Spacing between label and input */
+  }
+  
+  .app-container .form-field input {
+    flex: 1; /* Take up the remaining space */
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+  
+  .app-container .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block; /* Make the button a block element */
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Spacing above the button */
+  }
+  
+  .app-container .submit-btn  {
+    background-color: #0056b3;
+  }
+  
+  .app-container .loading-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #007bff;
+    animation: loading 2s linear infinite;
+  }
+  
+  .app-container .message {
+    text-align: center; /* Center the message */
+    color: green; /* Change the color to green */
+    margin-top: 10px;
+  }
+.adminuser{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  background-image: linear-gradient(45deg,grey,white);
+  height: 100vh;
+  padding-top: 50px;
+}
