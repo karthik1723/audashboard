@@ -4,6 +4,7 @@ import { initializeApp } from 'firebase/app';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import UserHeader from '../UserHeader';
 import './index.css';
+import Sidebar from '../Sidebar';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC3mjvIXgowrzAntZfdwqgg0RNk6y4rwXk",
@@ -193,8 +194,10 @@ const Programs = () => {
   
   return (
     <>
+      <div className='std-sidebar'>
+        <Sidebar />
       <div className='module-home'>
-      <UserHeader />
+      
       <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
       <select onChange={handleYearChange} value={selectedYear}>
   <option value="">Select Year of Commencement</option>
@@ -206,6 +209,7 @@ const Programs = () => {
 {/* {selectedYear && renderTable()} */}
 
 {renderCharts()}
+      </div>
       </div>
     </>
   );

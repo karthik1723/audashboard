@@ -144,13 +144,20 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth on   */
 }
 .module-home{
-  background-image: linear-gradient(45deg,grey,white);
-  min-height: 100vh;
   max-height: 100%;
-  border-radius: 5px;
+  width: 85.5%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 20px 0px 10px 0px;
+  margin-left: 15%;
 }
 @media print {
   .header-container,.nav-container, .print-button {
     display: none;
   }
+}
+.std-sidebar{
+  display: flex;
+  flex-direction: row;
 }

@@ -5,6 +5,8 @@ import { getFirestore, collection, getDocs, query, where } from 'firebase/firest
 import { initializeApp } from 'firebase/app';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import UserHeader from '../UserHeader';
+import Sidebar from '../Sidebar';
+import Scrolling from '../Scrolling';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC3mjvIXgowrzAntZfdwqgg0RNk6y4rwXk",
@@ -246,8 +248,10 @@ class Students extends Component {
       const chartCardClassName = showCharts ? "chart-card show-shadow" : "chart-card";
         return (
           <>
+          <div className='std-sidebar'>
+          <Sidebar />
           <div className='module-home'>
-          <UserHeader />
+            <Scrolling/>
             <div className='std-main-container'>
           <div className='dropdown-container'>
             <select
@@ -365,6 +369,7 @@ class Students extends Component {
             
             )}
             </div>
+          </div>
           </div>
             
           </>

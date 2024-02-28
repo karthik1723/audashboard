@@ -19,18 +19,3 @@
     height: 40px;
     width: 40px;
 }
-
-.buttons{
-    border: solid;
-    color: black;
-    background-color: white;
-    height: 30px;
-    width: 200px;
-    font-size: 18px;
-    border-width: 1px;
-    border-radius: 8px;
-    font-family: 'Bree Serif';
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}

@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
 import UserHeader from '../UserHeader';
 import './index.css';
+import Sidebar from '../Sidebar';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 
@@ -181,7 +182,7 @@ const FacultyComponent = () => {
     window.print();
   };
 
-  
+
 
   const fetchFacultyData = async () => {
     try {
@@ -212,9 +213,10 @@ const FacultyComponent = () => {
   
 
   return (
-          
+    <>
+      <div className='std-sidebar'>
+      <Sidebar />
     <div className='module-home'>
-    <UserHeader />
     <div className="dropdown-container">
         <select value={selectedProgram} onChange={handleProgramChange}>
           <option value="">Select Program</option>
@@ -342,6 +344,8 @@ const FacultyComponent = () => {
 </>
 )}
 </div>
+      </div>
+    </>
   );
 };
 

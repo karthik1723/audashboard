@@ -5,6 +5,7 @@ import Header from '../Header';
 import './index.css';
 import UserHeader from '../UserHeader';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import Sidebar from '../Sidebar';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -79,8 +80,11 @@ const Admissions = () => {
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#85144b', '#F012BE', '#3D9970', '#111111'];
 
   return (
-    <div className='module-home'><div>
-    <UserHeader />
+    <>
+      <div className='std-sidebar'>
+      <Sidebar />
+    <div className='module-home'>
+    
     <div className="dropdown-container">
       <select value={selectedYear} onChange={handleYearChange} className="year-dropdown">
         <option value="">Select Year</option>
@@ -141,7 +145,9 @@ const Admissions = () => {
     </button>
       </div>
     )}
-  </div></div>
+  </div>
+      </div>
+    </>
   );
 };
 

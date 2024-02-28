@@ -2,6 +2,8 @@
   "dependencies": {
     "antd": "^5.12.7",
     "chartjs": "^0.3.24",
-    "react-chartjs-2": "^5.2.0"
+    "react-chartjs-2": "^5.2.0",
+    "react-google-charts": "^4.0.1",
+    "three": "^0.161.0"
   }
 }

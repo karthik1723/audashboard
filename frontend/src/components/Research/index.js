@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import UserHeader from '../UserHeader';
+import Sidebar from '../Sidebar';
 import './index.css';
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
@@ -149,8 +150,10 @@ class ResearchGrants extends Component {
     const { showCharts, departments, selectedDepartment, loading, message } = this.state;
     return (
       <>
+      <div className='std-sidebar'>
+      <Sidebar />
         <div className='module-home'>
-        <UserHeader />
+        
         <div className="dropdown-container">
           <select value={selectedDepartment} onChange={this.handleDepartmentChange} className="department-dropdown">
             <option value="">Select Department</option>
@@ -202,6 +205,7 @@ class ResearchGrants extends Component {
         
         )}
         </div>
+      </div>
       </>
     );
   }
