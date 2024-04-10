@@ -5,6 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, 
 import UserHeader from '../UserHeader';
 import './index.css';
 import Sidebar from '../Sidebar';
+import Scrolling from '../Scrolling';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC3mjvIXgowrzAntZfdwqgg0RNk6y4rwXk",
@@ -197,7 +198,7 @@ const Programs = () => {
       <div className='std-sidebar'>
         <Sidebar />
       <div className='module-home'>
-      
+      <Scrolling/>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
       <select onChange={handleYearChange} value={selectedYear}>
   <option value="">Select Year of Commencement</option>

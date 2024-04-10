@@ -5,6 +5,7 @@ import UserHeader from '../UserHeader';
 import './index.css';
 import Sidebar from '../Sidebar';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import Scrolling from '../Scrolling';
 
 
 // Your web app's Firebase configuration
@@ -217,6 +218,7 @@ const FacultyComponent = () => {
       <div className='std-sidebar'>
       <Sidebar />
     <div className='module-home'>
+      <Scrolling/>
     <div className="dropdown-container">
         <select value={selectedProgram} onChange={handleProgramChange}>
           <option value="">Select Program</option>

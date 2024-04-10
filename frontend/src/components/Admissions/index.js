@@ -6,6 +6,7 @@ import './index.css';
 import UserHeader from '../UserHeader';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Sidebar from '../Sidebar';
+import Scrolling from '../Scrolling';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -84,7 +85,7 @@ const Admissions = () => {
       <div className='std-sidebar'>
       <Sidebar />
     <div className='module-home'>
-    
+    <Scrolling/>
     <div className="dropdown-container">
       <select value={selectedYear} onChange={handleYearChange} className="year-dropdown">
         <option value="">Select Year</option>

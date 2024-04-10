@@ -6,6 +6,7 @@ import Sidebar from '../Sidebar';
 import './index.css';
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import Scrolling from '../Scrolling';
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#00C49F', '#0088FE', /* more colors */];
 
 const firebaseConfig = {
@@ -153,7 +154,7 @@ class ResearchGrants extends Component {
       <div className='std-sidebar'>
       <Sidebar />
         <div className='module-home'>
-        
+        <Scrolling/>
         <div className="dropdown-container">
           <select value={selectedDepartment} onChange={this.handleDepartmentChange} className="department-dropdown">
             <option value="">Select Department</option>
